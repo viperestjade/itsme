@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Viperest</title>
+    <link href='https://fonts.googleapis.com/css?family=Fira Code' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Source Code Pro' rel='stylesheet'>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Fira Code';
+            background-color: #EBD3F8;
+        }
+
+        .navbar {
+            background-color: #2E073F;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            border-bottom: 2px solid #000000;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .navbar-left a, .navbar-right a {
+            color: #ffffff;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s, background-color 0.3s;
+        }
+
+        .navbar-left a:hover, .navbar-right a:hover {
+            background-color: #ddd;
+            color: #000;
+            animation: sparkle 1s infinite;
+        }
+
+        @keyframes sparkle {
+            0% { background-color: #ddd; box-shadow: 0 0 0 rgba(255, 105, 180, 0); }
+            50% { box-shadow: 0 0 10px rgba(255, 105, 180, 0.6); }
+            100% { box-shadow: 0 0 0 rgba(255, 105, 180, 0); }
+        }
+
+        .viperest-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .viperest-container a {
+            font-size: 50px;
+            font-weight: bold;
+            font-family: 'Brush Script MT', 'Brush Script Std', cursive;
+            margin-right: 10px;
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+
+        .viperest-container img {
+            height: 100px;
+            width: auto;
+        }
+
+        .section {
+			display: flex;
+			align-items: flex-start;
+			padding: 20px;
+			margin: 25px 15px;
+			background-color: #f0f0f0;
+			border-radius: 8px;
+			flex-wrap: wrap; /* Allow wrapping of content to prevent overlap */
+			transition: transform 0.3s, box-shadow 0.3s;
+		}
+
+		.section:hover {
+			transform: scale(1.02); /* Slightly enlarge the section on hover */
+			box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Add shadow to create a lifting effect */
+		}
+
+		.section img {
+			transition: transform 0.3s;
+		}
+
+		.section:hover img {
+			transform: scale(1.05); /* Slightly enlarge the image on hover */
+		}
+
+        .section h2 {
+            margin-top: 0;
+            color: #2E073F;
+        }
+
+        .slider-container {
+            position: relative;
+            max-width: 300px; /* Set maximum width for slider */
+            margin-right: 20px;
+            flex: 1;
+            overflow: hidden; /* Hide overflow for smooth sliding */
+        }
+
+        .slider-images {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .slider-images img {
+            border-radius: 8px;
+            min-width: 300px; /* Adjust to image width */
+            max-width: 300px; /* Adjust to image width */
+            height: 300px;
+        }
+
+        .slider-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .slider-button.left {
+            left: 0;
+        }
+
+        .slider-button.right {
+            right: 0;
+        }
+		
+		.video-container {
+			flex: 1 1 300px; /* Adjust width for video container */
+			margin-right: 20px;
+		}
+
+		.video-text {
+			flex: 60; /* Adjust text container to take remaining space */
+		}		
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2E073F;
+            color: white;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        footer h3 {
+            margin: 0 0 10px;
+        }
+
+        footer a img {
+            margin: 0 10px;
+            vertical-align: middle;
+            transition: transform 0.3s;
+        }
+
+        footer a img:hover {
+            transform: scale(1.2);
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <div class="navbar-left">
+        <a href="Homepage.html">Home</a>
+        <a href="About%20me%20overall.html" target="_blank">About Me</a>
+        <a href="Services.html">Services</a>
+        <a href="Contacts.html">Contacts and Social Media</a>
+        <a href="Projects.html">Thoughts, Images, Videos and Projects</a>
+    </div>
+    <div class="viperest-container">
+        <a href="https://www.tiktok.com/@strikersmileyjade" target="_blank" title="Just Edits">Viperest</a>
+        <img src="https://i.pinimg.com/736x/ab/4f/9c/ab4f9c599e29a420453bf45b5b32643e.jpg" alt="Viperest Logo">
+    </div>
+</div>
+
+<div class="section" style="position: relative; display: flex; align-items: flex-start;">
+    <div class="slider-container" style="flex: 1; position: relative;">
+        <div class="slider-images">
+            <img src="https://i.pinimg.com/736x/f8/6d/a8/f86da83b627962148ace8ecc2e882a15.jpg" alt="Image 1">
+            <img src="https://i.pinimg.com/736x/44/60/8e/44608eb9dc24757869b8b308b7a3b5a9.jpg" alt="Image 2">
+            <img src="https://i.pinimg.com/736x/ab/a0/04/aba004551f6d6c3f39455d448c42ace0.jpg" alt="Image 3">
+            <img src="https://i.pinimg.com/736x/06/ed/d5/06edd51fe94f91387847909eb360b911.jpg" alt="Image 4">
+        </div>
+        <button class="slider-button left" onclick="slideLeft()">❮</button>
+        <button class="slider-button right" onclick="slideRight()">❯</button>
+    </div>
+    <div style="flex: 2; position: relative;">
+        <h2>Image Editing</h2>
+        <p>The apps I use for editing pictures are mostly PicsArt, but I also use Lightroom, Meitu, and Remini. I can remove photobombs, enhance colors and lighting, and apply filters that best match or fit the picture. Additionally, I can remove unwanted elements, retouch faces, and make various adjustments to achieve the desired look.</p>
+        <img src="https://i.pinimg.com/736x/f3/29/5c/f3295c2d33171a92532a450e869b1af8.jpg" alt="Small Image" style="position: relative; bottom: 0; right: 0; height: 150px; width: 250px;">
+    </div>
+</div>
+
+<div class="section" style="position: relative; display: flex; align-items: flex-start;">
+    <div class="video-container" style="flex: 1; position: relative;">
+        <iframe width="350" height="250" src="https://www.youtube.com/embed/CsMU85b_hEY?autoplay=1&loop=1&playlist=CsMU85b_hEY&mute=1&controls=0" title="Edit Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="video-text" style="flex: 3; position: relative;">
+        <h2>Video Editing</h2>
+        <p>When it comes to editing videos, I use CapCut and Alight Motion on my phone, and Filmora on my PC. I don't just edit ML videos; I also work on presentations and other types of videos. I make effective use of colors, filters, effects, and music. My passion for editing developed during the pandemic, and I don’t mind spending hours or even days to complete a project.</p>
+        <img src="https://i.pinimg.com/736x/f3/29/5c/f3295c2d33171a92532a450e869b1af8.jpg" alt="Small Image" style="position: relative; bottom: 0; right: 0; height: 150px; width: 250px;">
+    </div>
+</div>
+
+<div class="section" style="position: relative; display: flex; align-items: flex-start;">
+    <img src="https://i.pinimg.com/736x/c9/02/32/c90232c67cf53e1fd31a9ff1bd2d5d46.jpg" alt="HTML Coding" style="flex: 0.65; height: 200px; width: 200px; object-fit: cover; margin-left: 0.4px; margin-right: 20px; position: relative;">
+    <div style="flex: 2; position: relative;">
+        <h2>HTML Coding</h2>
+        <p>HTML was one of the first programming languages I learned, starting in Grade 1. I began using Notepad for coding, and now I use Notepad++ and Visual Studio for my HTML projects. I am always eager to help others with their coding journey.</p>
+        <img src="https://i.pinimg.com/736x/f3/29/5c/f3295c2d33171a92532a450e869b1af8.jpg" alt="Small Image" style="position: relative; bottom: 0; right: 0; height: 150px; width: 250px;">
+    </div>
+</div>
+
+<div class="section" style="position: relative; display: flex; align-items: flex-start;">
+    <img src="https://i.pinimg.com/736x/68/e2/8b/68e28ba27ba09c63d2bf79dfa8d49235.jpg" alt="HTML Coding" style="flex: 0.65; height: 200px; width: 200px; object-fit: cover; margin-right: 20px; position: relative;">
+    <div style="flex: 2; position: relative;">
+        <h2>JavaScript Development</h2>
+        <p>JavaScript is wonderful because it enables me to create animations and effects that make my website more engaging and visually appealing.</p>
+        <img src="https://i.pinimg.com/736x/f3/29/5c/f3295c2d33171a92532a450e869b1af8.jpg" alt="Small Image" style="position: relative; bottom: 0; right: 0; height: 150px; width: 250px;">
+    </div>
+</div>
+
+<div class="section" style="position: relative; display: flex; align-items: flex-start;">
+    <img src="https://i.pinimg.com/564x/63/a7/b1/63a7b1894b3210d07e434e9d12170586.jpg" alt="Web Design" style="flex: 1; height: 300px; width: 200px; object-fit: cover; border-radius: 8px; margin-right: 20px; position: relative;">
+    <div style="flex: 2; position: relative;">
+        <h2>Web Design</h2>
+        <p>When it comes to designing a website, I use Figma to visualize the layout and ensure all elements match and flow together harmoniously.</p>
+        <img src="https://i.pinimg.com/736x/f3/29/5c/f3295c2d33171a92532a450e869b1af8.jpg" alt="Small Image" style="position: relative; bottom: 0; right: 0; height: 150px; width: 250px;">
+    </div>
+</div>
+
+<div class="section" style="position: relative; display: flex; align-items: flex-start;">
+    <img src="https://i.pinimg.com/736x/78/b4/94/78b494cbc5e41824a87b5c36a73576e8.jpg" alt="Canva Presentation" style="flex: 1; height: 200px; width: 150px; object-fit: cover; border-radius: 8px; margin-right: 20px; position: relative;">
+    <div style="flex: 2; position: relative;">
+        <h2>Canva Presentation</h2>
+        <p> I love designing presentations using Canva. I use it all the time for school projects because it allows me to apply appropriate and creative animations, colors, styles, and much more. Canva helps me make my presentations visually appealing and engaging.</p>
+        <img src="https://i.pinimg.com/736x/f3/29/5c/f3295c2d33171a92532a450e869b1af8.jpg" alt="Small Image" style="position: relative; bottom: 0; right: 0; height: 150px; width: 250px;">
+    </div>
+</div>
+
+
+<footer>
+    <h3>Socials</h3>
+    <a href="https://www.facebook.com/Jade.Ricafort6">
+        <img src="https://i.pinimg.com/originals/bd/c7/c9/bdc7c9c9d6d07bee87174eaa4920bc5a.png" alt="Facebook" width="50" height="50">
+    </a>
+    <a href="https://www.twitter.com/strikersmiley">
+        <img src="https://i.pinimg.com/564x/1a/f5/70/1af5708f6328a92488036ddd96d75d4d.jpg" alt="Twitter" width="50" height="50">
+    </a>
+    <a href="https://www.instagram.com/jadiellarose">
+        <img src="https://i.pinimg.com/564x/ec/d7/f1/ecd7f1699d1297c01320355e671979f8.jpg" alt="Instagram" width="50" height="50">
+    </a>
+    <a href="https://www.tiktok.com/@strikersmileyjade">
+        <img src="https://i.pinimg.com/564x/03/39/36/033936ccc7495a469d761e20b45f3f9d.jpg" alt="TikTok" width="50" height="50">
+    </a>
+    <a href="https://www.linkedin.com/in/rosella-jade-a-ricafort-169676296">
+        <img src="https://i.pinimg.com/564x/ab/1e/1e/ab1e1e8e0bda863f76755c2e235b2a2d.jpg" alt="Linkedin" width="50" height="50">
+    </a>
+</footer>
+
+<script>
+    let currentIndex = 0;
+    const imageWidth = 300; // Width of each image
+
+    function slideLeft() {
+        const sliderImages = document.querySelector('.slider-images');
+        const totalImages = document.querySelectorAll('.slider-images img').length;
+        currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalImages - 1;
+        sliderImages.style.transform = `translateX(-${currentIndex * imageWidth}px)`;
+    }
+
+    function slideRight() {
+        const sliderImages = document.querySelector('.slider-images');
+        const totalImages = document.querySelectorAll('.slider-images img').length;
+        currentIndex = (currentIndex < totalImages - 1) ? currentIndex + 1 : 0;
+        sliderImages.style.transform = `translateX(-${currentIndex * imageWidth}px)`;
+    }
+</script>
+
+</body>
+</html>

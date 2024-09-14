@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Viperest</title>
+	<link href='https://fonts.googleapis.com/css?family=Fira Code' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Source Code Pro' rel='stylesheet'>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Fira Code';
+            background-color: #EBD3F8;
+        }
+
+         .navbar {
+            background-color: #2E073F;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            border-bottom: 2px solid #000000;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .navbar-left a, .navbar-right a {
+            color: #ffffff;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s, background-color 0.3s;
+        }
+
+        .navbar-left a:hover, .navbar-right a:hover {
+            background-color: #ddd;
+            color: #000;
+            animation: sparkle 1s infinite;
+        }
+
+        @keyframes sparkle {
+            0% { background-color: #ddd; box-shadow: 0 0 0 rgba(255, 105, 180, 0); }
+            50% { box-shadow: 0 0 10px rgba(255, 105, 180, 0.6); }
+            100% { box-shadow: 0 0 0 rgba(255, 105, 180, 0); }
+        }
+
+        .viperest-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .viperest-container a {
+            font-size: 50px;
+            font-weight: bold;
+            font-family: 'Brush Script MT', 'Brush Script Std', cursive;
+            margin-right: 10px;
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+
+        .viperest-container img {
+            height: 100px;
+            width: auto;
+        }
+
+
+        .main-content {
+            display: flex;
+            padding: 10px;
+        }
+
+        .left-column {
+            width: 65%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .section-container {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .section {
+            min-width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .arrow {
+            cursor: pointer;
+            position: absolute;
+            top: 40%;
+            transform: translateY(-50%);
+            font-size: 30px;
+            color: #2E073F;
+        }
+
+        .arrow-left {
+            left: 20px;
+        }
+
+        .arrow-right {
+            right: 20px;
+        }
+
+        .right-column {
+            width: 20%;
+            padding: 20px;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .news-item {
+            background-color: white;
+            padding: 3px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+		@keyframes spin {
+			0% { transform: rotate(0deg); }
+			100% { transform: rotate(360deg); }
+		}
+		
+		.spin {
+			display: inline-block;
+			animation: spin 2s linear infinite;
+		}
+		
+		@keyframes shake {
+			0% { transform: translateX(0); }
+			25% { transform: translateX(-5px); }
+			50% { transform: translateX(5px); }
+			75% { transform: translateX(-5px); }
+			100% { transform: translateX(0); }
+		}
+
+		.shake {
+			display: inline-block;
+			animation: shake 0.5s ease-in-out;
+			animation-iteration-count: infinite; /* Optional: remove or change the iteration count */
+		}
+		
+        .additional-sections {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+            padding: 100px;
+        }
+
+        .additional-section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 10px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .grid-item {
+            width: 100%;
+            padding-bottom: 100%;
+            position: relative;
+            background-color: #f0f0f0;
+            overflow: hidden;
+            border: 1px solid #ddd;
+        }
+
+        .grid-item img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+		
+		footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2E073F;
+            color: white;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        footer h3 {
+            margin: 0 0 10px;
+        }
+
+        footer a img {
+            margin: 0 10px;
+            vertical-align: middle;
+            transition: transform 0.3s;
+        }
+
+        footer a img:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <div class="navbar-left">
+        <a href="Homepage.html">Home</a>
+        <a href="About%20me%20overall.html" target="_blank">About Me</a>
+        <a href="Services.html">Services</a>
+        <a href="Contacts.html">Contacts and Social Media</a>
+        <a href="Projects.html">Thoughts, Images, Videos and Projects</a>
+    </div>
+    <div class="viperest-container">
+        <a href="https://www.tiktok.com/@strikersmileyjade" target="_blank" title="Just Edits">Viperest</a>
+        <img src="https://i.pinimg.com/736x/ab/4f/9c/ab4f9c599e29a420453bf45b5b32643e.jpg" alt="Viperest Logo">
+    </div>
+</div>
+
+<div class="main-content">
+    <!-- Left Column: Sliding Content -->
+    <div class="left-column">
+        <div class="section-container" id="slider">
+			<div class="section" id="images"><center><img src="https://i.pinimg.com/736x/70/4a/09/704a09bc57d1eb0ce960d2800b5c45f9.jpg" alt="Cura"width="800" height="450"></center></div>
+            <div class="section" id="images"><center><img src="https://i.pinimg.com/1200x/bf/d6/76/bfd6763c23b15f6cad59ccb4b0e6d127.jpg" alt="Cura"width="800" height="450"></center></div>
+            <div class="section" id="videos"><center><img src="https://i.pinimg.com/736x/d9/09/af/d909af78067a6033ea4b088da8a3b807.jpg" alt="Cura"width="800" height="450"></center></div>
+            <div class="section" id="projects"><center><img src="https://i.pinimg.com/736x/75/20/00/752000b93906f1585587f79963b27d9f.jpg" alt="Cura"width="800" height="550"></center></div>
+			<div class="section" id="projects"><center><img src="https://i.pinimg.com/736x/f8/06/e6/f806e61d9ce8a7abd775c4a3d875c1c0.jpg" alt="Cura"width="800" height="450"></center></div>
+        </div>
+
+        <!-- Arrows for sliding -->
+        <div class="arrow arrow-left" onclick="slideLeft()">&#10094;</div>
+        <div class="arrow arrow-right" onclick="slideRight()">&#10095;</div>
+    </div>
+
+    <!-- Right Column: News Updates -->
+    <div class="right-column">
+	<h2>☞Future Projects</h2>
+        <div class="news-grid">
+            <div class="news-item"><center>Greeting Programming Website</center>
+			<center><img src="https://i.pinimg.com/564x/9b/03/2f/9b032f54b62c3316a9d199b083188410.jpg" alt="Greet"width="200" height="200"></center></div>
+            <div class="news-item"><center>Automatically Computed RREF</center>
+			<center><img src="https://i.pinimg.com/564x/6e/04/b7/6e04b7533e656a1059bfa5b088823cb2.jpg" alt="RREF"width="200" height="200"></center></div>
+            <div class="news-item"><center>Personality Quiz Website</center>
+			<center><img src="https://i.pinimg.com/564x/1a/8f/48/1a8f488f31f73eb7dc538bfcae278060.jpg" alt="Quiz"width="200" height="200"></center></div>
+            <div class="news-item"><center>CSS Animation Sets Website</center>
+			<center><img src="https://i.pinimg.com/564x/fa/fc/cc/fafccc109c123ebc4fcb37b1c0094bbb.jpg" alt="CSS"width="200" height="200"></center></div>
+        </div>
+    </div>
+</div>
+
+<!-- Additional Sections -->
+<div class="additional-sections">
+ <center><h1>✧★✧Thoughts✧★✧</h1></center>
+    <div class="additional-section"><h2>Perspective<span class="spin">🍃</span></h2><p>Will you stay or not?
+Do you want to make it last?
+Are you willing to stay?
+Will you continue to support or leave?
+Can you handle it?
+Are they a friend, lover, family, stranger, or somebody you used to know?
+Do you know what they are going through?
+Are you true to them?
+Why are you like this?
+Do you see things from their perspective?
+Know the person's POV. Do you know what’s happening in their life? Do you think you have the right to judge them? You hate that person for what? For hurting you? For killing your happiness? Do you think negative thinking can help you? Does gossiping about someone make you a better person? Anger and hate, leave me alone. It's not cool to bring someone down, especially if that person is doing their best to change, to be a better person. Why do you care? Is it your life? It's better to talk about your life and your problems rather than issues that shouldn't be our business.
+They gossip about you? Let them. Those small-minded people. Their life isn't interesting, so they talk about yours. You can share, but remember your words could be a lie. Know each other's POV. Speak up? Sure. But always consider the other person's POV.</p></div>
+    <div class="additional-section"><h2>Thank you<span class="spin">🌸</span></h2><p>Some people say the only way to forget the person and move on with that person is to think about all the bad things they did to you. I believe that it's not right for both your heart and mind. The more you think about it, yes, you will eventually move on, but the trauma will stay. Then think about the good memories? I mean, it's not bad to think about the good memories you had, but the more you think about it, the slower the progress of moving on. You want to go back to the past again and again to the point you are losing track of which path to take. You forgot to move forward, you forgot the present itself. What to do then? Forget about the past but bring the lessons and reminders. Learn from it and compete with your past self. Be the best version of yourself, love yourself more than ever, and if you ever remember that past again, instead of being sad, angry, and feeling the pain, thank them. Thank you to the people who made me realize, thank you for the lessons, thank you I met you, thank you for everything. Because of you, you made me stronger.</p></div>
+    <div class="additional-section"><h2>MLBB and Minecraft<span class="spin">🎮</span></h2><p>I started playing Minecraft when I was in Grade 3. I love building and creating structures, which is why I installed it in the first place. My cousin let me play on her laptop back then. As I grew older, I discovered cheats in the game that involved a bit of coding, like using commands such as /execute. That’s when I realized my interest in programming, although computer science wasn’t my first choice. I had initially wanted to be an architect, but I felt I didn’t have a chance since I’m not skilled at drawing. Either way, Minecraft helped develop my creativity.
+
+Mobile Legends: Bang Bang is one of my favorite games right now. I started playing it in Grade 7 after seeing my sister and brother download it, so I thought, why not give it a try? In the end, I made many friends and improved my skills, progressing from marksman to support, then to exp laner, and now I mainly play as a mage. I won my first championship at Ateneo de Naga during intramurals, representing the COCS Department of Computer Studies and Digital Animation. I’m also a varsity MLBB player for my organization, the Ateneo de Naga Golden Galliants. Both games have shaped me into someone who is creative and determined.</p></div>
+    <div class="additional-section"><h2>Photography<span class="shake">📷</span></h2><p>I wasn't skilled in photography before, but visiting these places ignited a newfound passion to learn and capture every moment possible. The allure of exploring different angles, fine-tuning brightness levels, and mastering the art of zooming in and out captivated me. As I delved deeper into documenting my travels, it became more than just a hobby—it became a way to encapsulate the essence of each experience, preserving cherished memories that I can revisit time and time.</p></div>
+    <div class="additional-section"><h2>Why College?<span class="shake">🖋</span></h2><p>I chose to attend college because I believe it's a great chance to learn more and meet new people. I want to embrace the college experience beyond just studying – joining clubs, going on trips, and playing sports. I picked Computer Science because I love technology and want to create apps, software, and websites, as well as fix coding errors. I also see college as a time to make mistakes and learn from them, so I'm better prepared for my future career. And also give back to my parents’ hardwork.</p></div>
+	<div class="additional-section"><h2>Love   <span class="shake">❤️</span></h2><p>To me, love is supposed to be genuine and unconditional to the point where you don’t even know why you love that person. You don’t need a specific reason to choose to be with them, not for their beauty, mindset, or any other quality. You love the person despite their flaws and past; you love them for who they truly are. You care for this person, and you want to be with them—not out of obsession or force. You understand and trust them, and you are patient. You stand by each other through thick and thin, through ups and downs. That is love.</p></div>
+	<div class="additional-section"><h2>Music and Talent<span class="shake">🎼</span></h2><p>Because of my father, I was drawn to music to the point where I started singing, and I developed this skill through karaoke and joining choirs. As for dancing, it began when I was a kindergarten student at my old school, St. Paul Academy of Goa, and it has developed throughout the years. Now, I still sing and dance in different genres.</p></div>
+	<div class="additional-section">
+  <h2>Describe Myself<span class="shake">💁🏻‍♀️</span></h2>
+  <div class="content">
+    <p>I am a cheerful and outgoing person, though sometimes a bit shy. I am always eager to learn, and a good listener, and I enjoy collaborating, helping, and making new friends.</p>
+  </div>
+</div>
+</div>
+
+<center><h2>Images</h2></center>
+<div class="image-grid">
+    <div class="grid-item"><img src="https://i.pinimg.com/564x/af/38/3f/af383f48f2d3ea0ae5bd7b505d22c2c9.jpg" alt="Image 1"></div>
+    <div class="grid-item"><img src="https://i.pinimg.com/564x/90/c5/4d/90c54d61dc7ecec8120b6890b02a318a.jpg" alt="Image 2"></div>
+    <div class="grid-item"><img src="https://i.pinimg.com/736x/ac/6d/28/ac6d280ca91451501b71eeb719a00a8c.jpg" alt="Image 3"></div>
+    <div class="grid-item"><img src="https://i.pinimg.com/564x/c7/c3/43/c7c343cd384c6db1c64ad3dc3a978261.jpg" alt="Image 4"></div>
+    <div class="grid-item"><img src="https://i.pinimg.com/564x/22/31/8b/22318b24a1cfcc866bd9a237fc1563b8.jpg" alt="Image 5"></div>
+    <div class="grid-item"><img src="https://i.pinimg.com/564x/d9/38/4d/d9384df9ed172c174a252ed9aa8f76b6.jpg" alt="Image 6"></div>
+    <div class="grid-item"><img src="https://i.pinimg.com/564x/f3/b6/4c/f3b64c7b3d6a56232da59c8e529bea54.jpg" alt="Image 7"></div>
+    <div class="grid-item"><img src="https://i.pinimg.com/564x/3d/d0/5a/3dd05a35737616b45e44dd9b74da15b8.jpg" alt="Image 8"></div>
+    <div class="grid-item"><img src="https://i.pinimg.com/736x/18/bc/1f/18bc1fb1414ea50b188fd2fc6ff99fcf.jpg" alt="Image 9"></div>
+    <div class="grid-item"><img src="https://i.pinimg.com/736x/3b/4e/f4/3b4ef4b799ddd2c42e7058c800570087.jpg" alt="Image 10"></div>
+    <div class="grid-item"><img src="https://i.pinimg.com/736x/ca/38/81/ca38817155a5b3017f1b334766c576fb.jpg" alt="Image 11"></div>
+    <div class="grid-item"><img src="https://i.pinimg.com/736x/db/e9/7e/dbe97e3162da87a6fd52ec04712efc32.jpg" alt="Image 12"></div>
+</div>
+
+<footer>
+        <h3>Socials</h3>
+        <a href="https://www.facebook.com/Jade.Ricafort6">
+            <img src="https://i.pinimg.com/originals/bd/c7/c9/bdc7c9c9d6d07bee87174eaa4920bc5a.png" alt="Facebook" width="50" height="50">
+        </a>
+        <a href="https://www.twitter.com/strikersmiley">
+            <img src="https://i.pinimg.com/564x/1a/f5/70/1af5708f6328a92488036ddd96d75d4d.jpg" alt="Twitter" width="50" height="50">
+        </a>
+        <a href="https://www.instagram.com/jadiellarose">
+            <img src="https://i.pinimg.com/564x/ec/d7/f1/ecd7f1699d1297c01320355e671979f8.jpg" alt="Instagram" width="50" height="50">
+        </a>
+        <a href="https://www.tiktok.com/@strikersmileyjade">
+            <img src="https://i.pinimg.com/564x/03/39/36/033936ccc7495a469d761e20b45f3f9d.jpg" alt="TikTok" width="50" height="50">
+        </a>
+        <a href="https://www.linkedin.com/in/rosella-jade-a-ricafort-169676296">
+            <img src="https://i.pinimg.com/564x/ab/1e/1e/ab1e1e8e0bda863f76755c2e235b2a2d.jpg" alt="Linkedin" width="50" height="50">
+        </a>
+    </footer>
+
+<script>
+        let currentIndex = 0;
+        let slideInterval;
+
+        function slideLeft() {
+            const slider = document.getElementById('slider');
+            if (currentIndex > 0) {
+                currentIndex--;
+            } else {
+                currentIndex = slider.children.length - 1;
+            }
+            slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+            resetSlideInterval(); // Reset interval on manual slide
+        }
+
+        function slideRight() {
+            const slider = document.getElementById('slider');
+            if (currentIndex < slider.children.length - 1) {
+                currentIndex++;
+            } else {
+                currentIndex = 0;
+            }
+            slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+            resetSlideInterval(); // Reset interval on manual slide
+        }
+
+        function startSlideInterval() {
+            slideInterval = setInterval(slideRight, 10000); // Slide every 10 seconds
+        }
+
+        function resetSlideInterval() {
+            clearInterval(slideInterval);
+            startSlideInterval(); // Restart interval after user interaction
+        }
+
+        // Initialize the automatic sliding
+        startSlideInterval();
+
+        // Example of how you might add navigation buttons
+        document.getElementById('prev-button').addEventListener('click', slideLeft);
+        document.getElementById('next-button').addEventListener('click', slideRight);
+    </script>
+
+</body>
+</html>

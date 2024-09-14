@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home_Viperest</title>
+	<link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Fira Code' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Source Code Pro' rel='stylesheet'>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Fira Code';
+            background-color: #000000;
+            color: #FFFFFF;
+        }
+
+        .navbar {
+            background-color: #2E073F;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            border-bottom: 2px solid #000000;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .navbar-left a, .navbar-right a {
+            color: #ffffff;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s, background-color 0.3s;
+        }
+
+        .navbar-left a:hover, .navbar-right a:hover {
+            background-color: #ddd;
+            color: #000;
+            animation: sparkle 1s infinite;
+        }
+
+        @keyframes sparkle {
+            0% { background-color: #ddd; box-shadow: 0 0 0 rgba(255, 105, 180, 0); }
+            50% { box-shadow: 0 0 10px rgba(255, 105, 180, 0.6); }
+            100% { box-shadow: 0 0 0 rgba(255, 105, 180, 0); }
+        }
+
+        .viperest-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .viperest-container a {
+            font-size: 50px;
+            font-weight: bold;
+            font-family: 'Brush Script MT', 'Brush Script Std', cursive;
+            margin-right: 10px;
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+
+        .viperest-container img {
+            height: 100px;
+            width: auto;
+        }
+		
+		@keyframes spin {
+			0% { transform: rotate(0deg); }
+			100% { transform: rotate(360deg); }
+		}
+
+		.spin {
+			display: inline-block;
+			animation: spin 2s linear infinite;
+		}
+
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            height: calc(100vh - 70px);
+        }
+
+        .intro-section {
+            flex: 2;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000000;
+            position: relative;
+        }
+
+        .intro-section img {
+            width: 60%;
+            height: 80%;
+            position: relative;
+            object-fit: cover;
+            border-radius: 100%; 
+			transition: box-shadow 0.3s ease-in-out; 
+        }
+
+		.intro-section img:hover {
+			box-shadow: 0 0 15px 5px rgba(255, 105, 180, 0.8); 
+		}
+
+        .details-section {
+			flex: 1;
+			background-color: #EBD3F8;
+			padding: 10px 20px; 
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			border-left: 2px solid #2E073F;
+		}
+
+		.details-section h2 {
+			font-size: 70px; 
+			margin-top: 0; 
+			margin-bottom: 15px; 
+			color: #2E073F;
+			font-family: 'Cookie', cursive;
+		}
+		
+		.details-section h3 {
+			font-size: 28px; 
+			color: #2E073F;
+		}
+
+		.details-section p {
+			font-size: 16px; 
+			line-height: 1.6;
+			color: #2E073F;
+		}
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2E073F;
+            color: white;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        footer h3 {
+            margin: 0 0 10px;
+        }
+
+        footer a img {
+            margin: 0 10px;
+            vertical-align: middle;
+            transition: transform 0.3s;
+        }
+
+        footer a img:hover {
+            transform: scale(1.2);
+        }
+
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .intro-section img {
+            position: relative;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+     <div class="navbar">
+        <div class="navbar-left">
+            <a href="Homepage.html">Home</a>
+            <a href="About%20me%20overall.html" target="_blank">About Me</a>
+            <a href="Services.html">Services</a>
+            <a href="Contacts.html">Contacts and Social Media</a>
+            <a href="Projects.html">Thoughts, Images, Videos and Projects</a>
+        </div>
+        <div class="viperest-container">
+            <a href="https://www.tiktok.com/@strikersmileyjade" target="_blank" title="Just Edits">Viperest</a>
+            <img src="https://i.pinimg.com/736x/ab/4f/9c/ab4f9c599e29a420453bf45b5b32643e.jpg" alt="Viperest Logo">
+        </div>
+    </div>
+    
+    <div class="container" id="home">
+        <div class="intro-section">
+            <canvas id="codingCanvas"></canvas>
+            <img src="https://i.pinimg.com/736x/69/54/c3/6954c3fe985ab77fecca3a45b01b3fb4.jpg" alt="Placeholder Image">
+        </div>
+        <div class="details-section" id="about">
+            <h2><center>Welcome to my Homepage<span class="spin">🌸</span></center></h2>
+            <p>
+                My name is Rosella Jade Asetre Ricafort, but you can call me Jade or Rosella.
+                I am currently a 2nd-year student pursuing a degree in Computer Science at Ateneo de Naga University.
+                My dream job would be to become a web developer, app developer, software developer, or game developer.
+                Additionally, I am interested in learning more about cybersecurity and machine learning.
+            </p>
+			<p><h3><b>"Code, Collaborate, Create!"</h3></p></b>
+        </div>
+    </div>
+
+    <footer>
+        <h3>Socials</h3>
+        <a href="https://www.facebook.com/Jade.Ricafort6">
+            <img src="https://i.pinimg.com/originals/bd/c7/c9/bdc7c9c9d6d07bee87174eaa4920bc5a.png" alt="Facebook" width="50" height="50">
+        </a>
+        <a href="https://www.twitter.com/strikersmiley">
+            <img src="https://i.pinimg.com/564x/1a/f5/70/1af5708f6328a92488036ddd96d75d4d.jpg" alt="Twitter" width="50" height="50">
+        </a>
+        <a href="https://www.instagram.com/jadiellarose">
+            <img src="https://i.pinimg.com/564x/ec/d7/f1/ecd7f1699d1297c01320355e671979f8.jpg" alt="Instagram" width="50" height="50">
+        </a>
+        <a href="https://www.tiktok.com/@strikersmileyjade">
+            <img src="https://i.pinimg.com/564x/03/39/36/033936ccc7495a469d761e20b45f3f9d.jpg" alt="TikTok" width="50" height="50">
+        </a>
+        <a href="https://www.linkedin.com/in/rosella-jade-a-ricafort-169676296">
+            <img src="https://i.pinimg.com/564x/ab/1e/1e/ab1e1e8e0bda863f76755c2e235b2a2d.jpg" alt="Linkedin" width="50" height="50">
+        </a>
+    </footer>
+    
+    <script>
+    function startCodingEffect() {
+        const canvas = document.getElementById('codingCanvas');
+        const ctx = canvas.getContext('2d');
+
+        canvas.width = window.innerWidth;
+        canvas.height = document.querySelector('.intro-section').clientHeight;
+
+        let chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        let charArray = chars.split("");
+        let fontSize = 25; 
+        let columns = canvas.width / fontSize;
+        let drops = [];
+
+        for (let i = 0; i < columns; i++) {
+            drops[i] = 1;
+        }
+
+        function draw() {
+            ctx.fillStyle = "rgba(0, 0, 0, 0.05)"; 
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.fillStyle = "#DDA0DD"; 
+            ctx.font = fontSize + "px 'Courier New'";
+
+            for (let i = 0; i < drops.length; i++) {
+                let text = charArray[Math.floor(Math.random() * charArray.length)];
+                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+
+                drops[i]++;
+            }
+        }
+
+        setInterval(draw, 50);
+    }
+
+    window.onload = startCodingEffect;
+    window.onresize = startCodingEffect;
+</script>
+
+</body>
+</html>

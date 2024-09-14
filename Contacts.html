@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts and Social Media - Viperest</title>
+    <link href='https://fonts.googleapis.com/css?family=Fira Code' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Source Code Pro' rel='stylesheet'>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Fira Code';
+            background-color: #EBD3F8;
+        }
+
+        .navbar {
+            background-color: #2E073F;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            border-bottom: 2px solid #000000;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .navbar-left a, .navbar-right a {
+            color: #ffffff;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s, background-color 0.3s;
+        }
+
+        .navbar-left a:hover, .navbar-right a:hover {
+            background-color: #ddd;
+            color: #000;
+            animation: sparkle 1s infinite;
+        }
+
+        @keyframes sparkle {
+            0% { background-color: #ddd; box-shadow: 0 0 0 rgba(255, 105, 180, 0); }
+            50% { box-shadow: 0 0 10px rgba(255, 105, 180, 0.6); }
+            100% { box-shadow: 0 0 0 rgba(255, 105, 180, 0); }
+        }
+
+        .viperest-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .viperest-container a {
+            font-size: 50px;
+            font-weight: bold;
+            font-family: 'Brush Script MT', 'Brush Script Std', cursive;
+            margin-right: 10px;
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+
+        .viperest-container img {
+            height: 100px;
+            width: auto;
+        }
+
+        .contact-section {
+            position: relative;
+            padding: 20px;
+            background-image: url('https://i.pinimg.com/564x/a7/26/51/a726513fc55c8747bc342273961f4148.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #ffffff;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            z-index: 1;
+        }
+
+        .contact-section * {
+            position: relative;
+            z-index: 2;
+        }
+
+        .contact-section h2 {
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        .social-media-links a {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 24px;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .social-media-links a:hover {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <div class="navbar-left">
+        <a href="Homepage.html">Home</a>
+        <a href="About%20me%20overall.html" target="_blank">About Me</a>
+        <a href="Services.html">Services</a>
+        <a href="Contacts.html">Contacts and Social Media</a>
+        <a href="Projects.html">Thoughts, Images, Videos and Projects</a>
+    </div>
+    <div class="viperest-container">
+        <a href="https://www.tiktok.com/@strikersmileyjade" target="_blank" title="Just Edits">Viperest</a>
+        <img src="https://i.pinimg.com/736x/ab/4f/9c/ab4f9c599e29a420453bf45b5b32643e.jpg" alt="Viperest Logo">
+    </div>
+</div>
+
+<div class="contact-section">
+    <h2><u>Message Me 📞</u></h2>
+    <div class="contact-info">
+        <p><strong>Email:</strong> ricafortjade@gmail.com</p>
+        <p><strong>Phone:</strong> +63 948 488 5953</p>
+        <p><strong>Hometown:</strong> Goa Camarines Sur</p>
+    </div>
+
+    <div class="social-media-links">
+        <a href="https://www.facebook.com/Jade.Ricafort6">
+            <img src="https://i.pinimg.com/originals/bd/c7/c9/bdc7c9c9d6d07bee87174eaa4920bc5a.png" alt="Facebook" width="50" height="50">
+        </a>
+        <a href="https://www.twitter.com/strikersmiley">
+            <img src="https://i.pinimg.com/564x/1a/f5/70/1af5708f6328a92488036ddd96d75d4d.jpg" alt="Twitter" width="50" height="50">
+        </a>
+        <a href="https://www.instagram.com/jadiellarose">
+            <img src="https://i.pinimg.com/564x/ec/d7/f1/ecd7f1699d1297c01320355e671979f8.jpg" alt="Instagram" width="50" height="50">
+        </a>
+        <a href="https://www.tiktok.com/@strikersmileyjade">
+            <img src="https://i.pinimg.com/564x/03/39/36/033936ccc7495a469d761e20b45f3f9d.jpg" alt="TikTok" width="50" height="50">
+        </a>
+        <a href="https://www.linkedin.com/in/rosella-jade-a-ricafort-169676296">
+            <img src="https://i.pinimg.com/564x/ab/1e/1e/ab1e1e8e0bda863f76755c2e235b2a2d.jpg" alt="Linkedin" width="50" height="50">
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
