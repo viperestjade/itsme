@@ -14,7 +14,7 @@
             background-color: #EBD3F8;
         }
 
-         .navbar {
+        .navbar {
             background-color: #2E073F;
             display: flex;
             justify-content: space-between;
@@ -62,7 +62,6 @@
             height: 100px;
             width: auto;
         }
-
 
         .main-content {
             display: flex;
@@ -141,8 +140,7 @@
 
 		.shake {
 			display: inline-block;
-			animation: shake 0.5s ease-in-out;
-			animation-iteration-count: infinite; /* Optional: remove or change the iteration count */
+			animation: shake 0.5s ease-in-out infinite;
 		}
 		
         .additional-sections {
@@ -207,6 +205,50 @@
 
         footer a img:hover {
             transform: scale(1.2);
+        }
+
+        /* Responsive mobile styles */
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+                padding: 5px;
+            }
+
+            .left-column, .right-column {
+                width: 100%;
+                padding: 10px;
+            }
+
+            .section {
+                padding: 10px;
+            }
+
+            .image-grid {
+                grid-template-columns: repeat(3, 1fr);
+                padding: 10px;
+            }
+
+            .navbar {
+                flex-direction: column;
+                padding: 5px;
+            }
+
+            .navbar-left a, .navbar-right a {
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+
+            .viperest-container a {
+                font-size: 40px;
+            }
+
+            .additional-sections {
+                padding: 50px;
+            }
+
+            .grid-item {
+                padding-bottom: 80%;
+            }
         }
     </style>
 </head>

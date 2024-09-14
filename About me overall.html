@@ -302,6 +302,57 @@ footer {
         footer a img:hover {
             transform: scale(1.2);
         }
+		
+		@media (max-width: 768px) {
+    .container {
+        padding: 20px 10px; /* Reduce padding for smaller screens */
+    }
+
+    .sections-container {
+        gap: 10px; /* Reduce gap between sections */
+    }
+
+    .section {
+        padding: 20px; /* Decrease padding inside sections */
+    }
+
+    .profile-img {
+        width: 150px; /* Adjust profile image size */
+        height: 150px;
+    }
+
+    .intro-text {
+        font-size: 30px; /* Reduce font size for mobile */
+    }
+
+    .section h2 {
+        font-size: 30px; /* Adjust section title size */
+    }
+
+    .section p {
+        font-size: 16px; /* Adjust paragraph font size */
+    }
+
+    .skills-container {
+        flex-direction: column; /* Stack skills section vertically */
+        align-items: center; /* Center content */
+    }
+
+    .skills-images {
+        grid-template-columns: 1fr; /* Single column grid for mobile */
+        max-width: 200px; /* Reduce grid size */
+    }
+
+    .video-container {
+        max-width: 100%; /* Make video container full width */
+    }
+
+    .navbar {
+        flex-direction: column; /* Stack navbar links vertically */
+        align-items: center;
+        padding: 10px 0; /* Reduce navbar padding */
+    }
+}
 
 
     </style>
@@ -473,15 +524,33 @@ footer {
         </div>
 		<div class="video-container">
             <div class="video-container">
-				<iframe width="410" height="220" src="https://www.youtube.com/embed/ZcaZ-jIARFc?autoplay=1&mute=1&controls=0&loop=1&playlist=ZcaZ-jIARFc" title="Alightmotion" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-				<iframe width="410" height="220" src="https://www.youtube.com/embed/HEoxlbkk-dQ?autoplay=1&mute=1&controls=0&loop=1&playlist=HEoxlbkk-dQ" title="HTML CODE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-				<iframe width="410" height="220" src="https://www.youtube.com/embed/yUDHK8HxsAA?autoplay=1&mute=1&controls=0&loop=1&playlist=yUDHK8HxsAA" title="Picsart" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				<iframe width="410" height="220" 
+					src="https://www.youtube.com/embed/ZcaZ-jIARFc?autoplay=1&mute=1&controls=0&loop=1&playlist=ZcaZ-jIARFc" 
+					title="Alightmotion" 
+					frameborder="0" 
+					allow="autoplay; encrypted-media" 
+					allowfullscreen>
+				</iframe>
+
+				<iframe width="410" height="220" 
+					src="https://www.youtube.com/embed/HEoxlbkk-dQ?autoplay=1&mute=1&controls=0&loop=1&playlist=HEoxlbkk-dQ" 
+					title="HTML CODE" 
+					frameborder="0" 
+					allow="autoplay; encrypted-media" 
+					allowfullscreen>
+				</iframe>
+
+				<iframe width="410" height="220" 
+					src="https://www.youtube.com/embed/CsMU85b_hEY?autoplay=1&mute=1&controls=0&loop=1&playlist=CsMU85b_hEY" 
+					title="YouTube video player" 
+					frameborder="0" 
+					allow="autoplay; encrypted-media" 
+					allowfullscreen>
+				</iframe>
 			</div>
         </div>
     </div>
 </div>
-
-
 		<div class="section" id="organizations_and_trainings">
     <div class="section-content">
 	<div class="hello-content">

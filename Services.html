@@ -64,28 +64,28 @@
         }
 
         .section {
-			display: flex;
-			align-items: flex-start;
-			padding: 20px;
-			margin: 25px 15px;
-			background-color: #f0f0f0;
-			border-radius: 8px;
-			flex-wrap: wrap; /* Allow wrapping of content to prevent overlap */
-			transition: transform 0.3s, box-shadow 0.3s;
-		}
+            display: flex;
+            align-items: flex-start;
+            padding: 20px;
+            margin: 25px 15px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            flex-wrap: wrap; /* Allow wrapping of content to prevent overlap */
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
 
-		.section:hover {
-			transform: scale(1.02); /* Slightly enlarge the section on hover */
-			box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Add shadow to create a lifting effect */
-		}
+        .section:hover {
+            transform: scale(1.02); /* Slightly enlarge the section on hover */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Add shadow to create a lifting effect */
+        }
 
-		.section img {
-			transition: transform 0.3s;
-		}
+        .section img {
+            transition: transform 0.3s;
+        }
 
-		.section:hover img {
-			transform: scale(1.05); /* Slightly enlarge the image on hover */
-		}
+        .section:hover img {
+            transform: scale(1.05); /* Slightly enlarge the image on hover */
+        }
 
         .section h2 {
             margin-top: 0;
@@ -130,15 +130,15 @@
         .slider-button.right {
             right: 0;
         }
-		
-		.video-container {
-			flex: 1 1 300px; /* Adjust width for video container */
-			margin-right: 20px;
-		}
 
-		.video-text {
-			flex: 60; /* Adjust text container to take remaining space */
-		}		
+        .video-container {
+            flex: 1 1 300px; /* Adjust width for video container */
+            margin-right: 20px;
+        }
+
+        .video-text {
+            flex: 60; /* Adjust text container to take remaining space */
+        }
 
         footer {
             text-align: center;
@@ -163,6 +163,49 @@
             transform: scale(1.2);
         }
 
+        /* Responsive mobile styles */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                padding: 5px;
+            }
+
+            .navbar-left a, .navbar-right a {
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+
+            .viperest-container a {
+                font-size: 40px;
+            }
+
+            .section {
+                padding: 15px;
+                margin: 15px 5px;
+            }
+
+            .slider-container, .video-container {
+                max-width: 100%;
+                margin-right: 0;
+            }
+
+            .slider-images img, .video-container img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .video-text {
+                margin-top: 15px;
+            }
+
+            footer {
+                padding: 10px;
+            }
+
+            .section img {
+                max-width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
