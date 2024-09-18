@@ -269,7 +269,6 @@
 </div>
 
 <div class="main-content">
-    <!-- Left Column: Sliding Content -->
     <div class="left-column">
         <div class="section-container" id="slider">
 			<div class="section" id="images"><center><img src="https://i.pinimg.com/736x/70/4a/09/704a09bc57d1eb0ce960d2800b5c45f9.jpg" alt="Cura"width="800" height="450"></center></div>
@@ -393,18 +392,17 @@ Mobile Legends: Bang Bang is one of my favorite games right now. I started playi
         }
 
         function startSlideInterval() {
-            slideInterval = setInterval(slideRight, 10000); // Slide every 10 seconds
+            slideInterval = setInterval(slideRight, 10000); 
         }
 
         function resetSlideInterval() {
             clearInterval(slideInterval);
-            startSlideInterval(); // Restart interval after user interaction
+            startSlideInterval();
         }
 
-        // Initialize the automatic sliding
+
         startSlideInterval();
 
-        // Example of how you might add navigation buttons
         document.getElementById('prev-button').addEventListener('click', slideLeft);
         document.getElementById('next-button').addEventListener('click', slideRight);
     </script>
