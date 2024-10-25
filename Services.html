@@ -70,13 +70,13 @@
             margin: 25px 15px;
             background-color: #f0f0f0;
             border-radius: 8px;
-            flex-wrap: wrap;
+            flex-wrap: wrap; /* Allow wrapping of content to prevent overlap */
             transition: transform 0.3s, box-shadow 0.3s;
         }
 
         .section:hover {
-            transform: scale(1.02); 
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            transform: scale(1.02); /* Slightly enlarge the section on hover */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Add shadow to create a lifting effect */
         }
 
         .section img {
@@ -84,7 +84,7 @@
         }
 
         .section:hover img {
-            transform: scale(1.05); 
+            transform: scale(1.05); /* Slightly enlarge the image on hover */
         }
 
         .section h2 {
@@ -94,10 +94,10 @@
 
         .slider-container {
             position: relative;
-            max-width: 300px; 
+            max-width: 300px; /* Set maximum width for slider */
             margin-right: 20px;
             flex: 1;
-            overflow: hidden; 
+            overflow: hidden; /* Hide overflow for smooth sliding */
         }
 
         .slider-images {
@@ -107,8 +107,8 @@
 
         .slider-images img {
             border-radius: 8px;
-            min-width: 300px;
-            max-width: 300px; 
+            min-width: 300px; /* Adjust to image width */
+            max-width: 300px; /* Adjust to image width */
             height: 300px;
         }
 
@@ -132,12 +132,12 @@
         }
 
         .video-container {
-            flex: 1 1 300px; 
+            flex: 1 1 300px; /* Adjust width for video container */
             margin-right: 20px;
         }
 
         .video-text {
-            flex: 60; 
+            flex: 60; /* Adjust text container to take remaining space */
         }
 
         footer {
@@ -238,7 +238,6 @@
     <div style="flex: 2; position: relative;">
         <h2>Image Editing</h2>
         <p>The apps I use for editing pictures are mostly PicsArt, but I also use Lightroom, Meitu, and Remini. I can remove photobombs, enhance colors and lighting, and apply filters that best match or fit the picture. Additionally, I can remove unwanted elements, retouch faces, and make various adjustments to achieve the desired look.</p>
-        <img src="https://i.pinimg.com/736x/f3/29/5c/f3295c2d33171a92532a450e869b1af8.jpg" alt="Small Image" style="position: relative; bottom: 0; right: 0; height: 150px; width: 250px;">
     </div>
 </div>
 
@@ -249,7 +248,6 @@
     <div class="video-text" style="flex: 3; position: relative;">
         <h2>Video Editing</h2>
         <p>When it comes to editing videos, I use CapCut and Alight Motion on my phone, and Filmora on my PC. I don't just edit ML videos; I also work on presentations and other types of videos. I make effective use of colors, filters, effects, and music. My passion for editing developed during the pandemic, and I don’t mind spending hours or even days to complete a project.</p>
-        <img src="https://i.pinimg.com/736x/f3/29/5c/f3295c2d33171a92532a450e869b1af8.jpg" alt="Small Image" style="position: relative; bottom: 0; right: 0; height: 150px; width: 250px;">
     </div>
 </div>
 
@@ -258,7 +256,6 @@
     <div style="flex: 2; position: relative;">
         <h2>HTML Coding</h2>
         <p>HTML was one of the first programming languages I learned, starting in Grade 1. I began using Notepad for coding, and now I use Notepad++ and Visual Studio for my HTML projects. I am always eager to help others with their coding journey.</p>
-        <img src="https://i.pinimg.com/736x/f3/29/5c/f3295c2d33171a92532a450e869b1af8.jpg" alt="Small Image" style="position: relative; bottom: 0; right: 0; height: 150px; width: 250px;">
     </div>
 </div>
 
@@ -267,7 +264,6 @@
     <div style="flex: 2; position: relative;">
         <h2>JavaScript Development</h2>
         <p>JavaScript is wonderful because it enables me to create animations and effects that make my website more engaging and visually appealing.</p>
-        <img src="https://i.pinimg.com/736x/f3/29/5c/f3295c2d33171a92532a450e869b1af8.jpg" alt="Small Image" style="position: relative; bottom: 0; right: 0; height: 150px; width: 250px;">
     </div>
 </div>
 
@@ -275,8 +271,7 @@
     <img src="https://i.pinimg.com/564x/63/a7/b1/63a7b1894b3210d07e434e9d12170586.jpg" alt="Web Design" style="flex: 1; height: 300px; width: 200px; object-fit: cover; border-radius: 8px; margin-right: 20px; position: relative;">
     <div style="flex: 2; position: relative;">
         <h2>Web Design</h2>
-        <p>When it comes to designing a website, I use Figma to visualize the layout and ensure all elements match and flow together harmoniously.</p>
-        <img src="https://i.pinimg.com/736x/f3/29/5c/f3295c2d33171a92532a450e869b1af8.jpg" alt="Small Image" style="position: relative; bottom: 0; right: 0; height: 150px; width: 250px;">
+        <p>When it comes to designing a website, I use Figma to visualize the layout and ensure all elements match and flow together harmoniously. I also use Canva to send designs to my clients for approval before implementing them in Figma.</p>
     </div>
 </div>
 
@@ -285,10 +280,16 @@
     <div style="flex: 2; position: relative;">
         <h2>Canva Presentation</h2>
         <p> I love designing presentations using Canva. I use it all the time for school projects because it allows me to apply appropriate and creative animations, colors, styles, and much more. Canva helps me make my presentations visually appealing and engaging.</p>
-        <img src="https://i.pinimg.com/736x/f3/29/5c/f3295c2d33171a92532a450e869b1af8.jpg" alt="Small Image" style="position: relative; bottom: 0; right: 0; height: 150px; width: 250px;">
     </div>
 </div>
 
+<div class="section" style="position: relative; display: flex; align-items: flex-start;">
+    <img src="https://i.pinimg.com/736x/07/7f/fe/077ffedc17acea4ca5290e6783a01a8d.jpg" alt="Canva Presentation" style="flex: 1; height: 510px; width: 500px; object-fit: cover; border-radius: 8px; margin-right: 20px; position: relative;">
+    <div style="flex: 2; position: relative;">
+        <h2>Graphic Designs</h2>
+        <p>I also create graphic designs for T-shirts, pins, lanyards, stickers, and much more, using Canva and PicsArt.</p>
+    </div>
+</div>
 
 <footer>
     <h3>Socials</h3>
